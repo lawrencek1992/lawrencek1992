@@ -30,6 +30,8 @@ html {
 body {
   font-family: Montserrat Alternates, sans-serif;
   color: white;
+  height: 100%;
+  width: 100%;
 }
 
 /*NAV BAR*/
@@ -76,7 +78,6 @@ header {
      rgba(50, 46, 47, 1)
   );
   height: 100vh;
-  text-height: 100vh;
 }
 h1 {
   font-size: 6em;
@@ -100,6 +101,9 @@ h2 {
 }
 #projects {
   background-color: var(--blue);
+  height: 100vh;
+  position: relative;
+  overflow: scroll;
 }
 #projects-header {
   text-decoration: underline;
@@ -149,12 +153,15 @@ img {
 
 /*CONTACT SECTION*/
 #contact {
+  heigh: 100%;
+  min-height: 100vh;
   background-color: var(--black);
   text-align: center;
   color: white;
   padding-top: 4em;
   padding-bottom: 4em;
   margin-top: 0px;
+  position: relative;
 }
 #contact-header {
   font-family: 'Archivo Black', sans-serif;
@@ -196,12 +203,18 @@ footer {
   html {
     font-size: 60%;
   }
+  header, #contact {
+    padding-top: 14em;
+  }
 }
 
 /*Laptops, small screens*/
 @media (max-width: 64em) {
   html {
     font-size: 58%;
+  }
+  header, #projects, #contact {
+    padding-top: 14em;
   }
 }
 
@@ -210,11 +223,17 @@ footer {
   html {
     font-size: 55%;
   }
+  header, #projects, #contact {
+    padding-top: 20em;
+  }
 }
   
 /*Mobile devices*/
 @media (max-width: 30em) {
   html {
     font-size: 50%;
+  }
+  header, #projects, #contact {
+    padding-top: 30em;
   }
 }
