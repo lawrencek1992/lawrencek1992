@@ -65,10 +65,10 @@ html {
 
 #far-mountain-3 {
   border-bottom: 8em solid #16082e;
-	border-left: 8em solid transparent;
-	border-right: 8em solid transparent;
-	height: 0;
-	width: 50em;
+  border-left: 8em solid transparent;
+  border-right: 8em solid transparent;
+  height: 0;
+  width: 50em;
   filter: blur(0.07em);
   position: absolute;
   bottom: 0;
