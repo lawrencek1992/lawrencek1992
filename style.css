@@ -237,6 +237,7 @@ header {
 
 h1 {
   color: var(--white);
+  font-size: 3em;
 }
 
 #title {
