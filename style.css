@@ -281,6 +281,10 @@ h1 {
 }
 
 /*PROJECTS SECTION STYLING*/
+#projects a {
+  text-decoration: none;
+}
+
 #projects {
   background-color: var(--purple);
   height: 100vh;
@@ -289,6 +293,7 @@ h1 {
   overflow: scroll;
 }
 #projects-header {
+  background-color: var(--purple);
   text-decoration: underline;
   text-align: center;
   padding-top: 2em;
@@ -296,6 +301,7 @@ h1 {
   color: var(--white);
 }
 .projects-grid {
+  background-color: var(--purple);
   display: grid;
   grid-template-columns: repeat(2, 2fr);
   grid-gap: 4em;
@@ -311,7 +317,7 @@ h1 {
 }
 .project-title {
   background-color: var(--purple);
-  color: var(--white);
+  color: var(--grey);
   text-align: center;
   font-size: 1.2rem;
   padding: 1rem;
@@ -319,14 +325,17 @@ h1 {
 .project-title:hover {
   color: var(--blue);
 }
-img {
+
+.product-img {
   height: calc(100% - 6.8rem);
+  max-height: 250px;
   width: 100%;
   object-fit: cover;
 }
 .project-tile {
-  background-color: var(--blue);
+  background-color: var(--purple);
   max-width: 40vw;
+  border: 1px solid var(--grey);
 }
 .btn {
   display: inline-block;
