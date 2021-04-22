@@ -10,7 +10,7 @@ This profile originally started as a pen created on CodePen.io. Original URL: [h
 
 The repository for this portfolio can be found here: https://github.com/lawrencek1992/lawrencek1992.github.io.git
 
-This site was built using html and css. 
+This site was built using html and css and bootstrap. 
 
 
 
