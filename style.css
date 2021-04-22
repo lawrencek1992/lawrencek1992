@@ -27,6 +27,39 @@ html {
   box-sizing: inherit;
 }
 
+/* MODAL STYLING */
+body.modal-open #main{
+  -webkit-filter: blur(7px);
+  -moz-filter: blur(7px);
+  -o-filter: blur(7px);
+  -ms-filter: blur(7px);
+  filter: blur(7px);
+}
+.btn-close {
+  background: var(--grey);
+  color: var(--white) !important;
+  font-size: 14px;
+  text-align: center;
+  padding-bottom: 12px !important;
+}
+.modal-content {
+  color: var(--white);
+  background: rgba(17, 6, 36, 0.85) ;
+}
+.modal-title {
+  color: #0dcaf0;
+  font-size: 20px;
+}
+.modal-body {
+  font-size: 14px;
+}
+.technologies label {
+  font-weight: bold;
+  font-size: 16px; 
+}
+.btn {
+  font-size: 14px;
+}
 /*HOME PAGE STYLING*/
 #night {
   height: 100vh;
@@ -317,7 +350,7 @@ h1 {
   overflow-y: hidden;
 }
 .project-title {
-  background-color: var(--purple);
+  background-color: var(--dark-purple);
   color: var(--grey);
   text-align: center;
   font-size: 1.2rem;
@@ -326,7 +359,6 @@ h1 {
 .project-title:hover {
   color: var(--blue);
 }
-
 .product-img {
   height: calc(100% - 6.8rem);
   max-height: 250px;
@@ -334,15 +366,9 @@ h1 {
   object-fit: cover;
 }
 .project-tile {
-  background-color: var(--purple);
+  background-color: var(--dark-purple);
   max-width: 40vw;
   border: 1px solid var(--grey);
-}
-.btn {
-  display: inline-block;
-  border-radius: 2px;
-  background-color: var(--blue);
-  color: var(--white);
 }
 
 /*CONTACT SECTION STYLING*/
@@ -388,13 +414,6 @@ footer {
 }
  
 /*MEDIA QUERIES FOR RESPONSIVE DESIGN*/
-/*  */
-/*  */
-/*  */
-/* Yo.... you need to fix the sizes of those images in the projects section too. They are slightly off. Also do media queries cause you have weird margins, and nothing is the right size for phones and tablets. 
-/*  */
-/*  */
-/*  */
 /*Extra small devices (small phones)*/
 @media only screen 
   and (min-device-width: 320px) 
