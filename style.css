@@ -7,6 +7,7 @@
   --purple: #16092e;
   --dark-purple: #110624;
   --blue: #0C5DCC;
+  --cyan: #0dcaf0;
   --yellow: #faec70;
 }
 
@@ -47,15 +48,25 @@ body.modal-open #main{
   background: rgba(17, 6, 36, 0.85) ;
 }
 .modal-title {
-  color: #0dcaf0;
+  color: var(--cyan);
   font-size: 20px;
 }
 .modal-body {
   font-size: 14px;
 }
+.technologies {
+  list-style-type: none;
+}
 .technologies label {
   font-weight: bold;
-  font-size: 16px; 
+  font-size: 16px;
+}
+.col-sm-4 {
+  text-align: center;
+  color: #000;
+  background-color: var(--cyan);
+  margin: 3px;
+  border-radius: 8px;
 }
 .btn {
   font-size: 14px;
