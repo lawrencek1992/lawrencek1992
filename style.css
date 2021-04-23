@@ -29,6 +29,9 @@ html {
 }
 
 /* MODAL STYLING */
+.modal-lg {
+  max-width: 700px; 
+}
 body.modal-open #main{
   -webkit-filter: blur(7px);
   -moz-filter: blur(7px);
@@ -50,6 +53,7 @@ body.modal-open #main{
 .modal-title {
   color: var(--cyan);
   font-size: 20px;
+  padding: 10px;
 }
 .modal-body {
   font-size: 14px;
@@ -61,12 +65,12 @@ body.modal-open #main{
   font-weight: bold;
   font-size: 16px;
 }
-.col-sm-4 {
+.col-sm-3, .col-sm-4 {
   text-align: center;
   color: #000;
   background-color: var(--cyan);
-  margin: 3px;
   border-radius: 8px;
+  margin: 10px;
 }
 .btn {
   font-size: 14px;
