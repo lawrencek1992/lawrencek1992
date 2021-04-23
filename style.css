@@ -433,7 +433,7 @@ footer {
 @media only screen 
   and (min-device-width: 320px) 
   and (max-device-width: 413px){
-    #nav-bar {
+    /* #nav-bar {
       font-size: 3.5rem;
       display: flex;
       justify-content: space-around;
@@ -482,14 +482,14 @@ footer {
     .contact-item {
       font-size: 2em;
       padding-top: 2em;
-    }
+    } */
 }
 
 /*Small devices (normal size phones)*/
 @media only screen 
   and (min-device-width: 414px) 
   and (max-device-width: 767px) {
-    #nav-bar {
+    /* #nav-bar {
       font-size: 3.5rem;
       display: flex;
       justify-content: space-around;
@@ -539,14 +539,14 @@ footer {
     .contact-item {
       font-size: 2em;
       padding-top: 2em;
-    }
+    } */
 }
 
 /*Medium devices (tablets, small laptops)*/
 @media only screen 
   and (min-device-width: 768px) 
   and (max-device-width: 960px) {
-    #nav-bar {
+    /* #nav-bar {
       font-size: 3rem;
       display: flex;
       justify-content: space-around;
@@ -596,26 +596,33 @@ footer {
     .contact-item {
       font-size: 2em;
       padding-top: 2em;
-    }
+    } */
 }
 
 /*Large devices (laptops)*/
 @media only screen 
   and (min-width: 961px)
   and (max-device-width: 1200px) {
-    #nav-bar {
-      font-size: 3rem;
-      display: flex;
-      justify-content: flex-end;
-      animation: none;
+    /* #nav-bar {
       position: fixed;
-      width: 107vw;
-      padding-top: 0.5em;
-      padding-bottom: 0.5em;
+      bottom: 0 !important;
+      width: 100%;
+      /* padding-bottom: 6em;
+      padding-right: 5em;
+      font-size: 1.5em;
     }
     #night {
       width: 107vw;
+      font-size: 1em;
+      width: 100%;
+      max-height: 100; 
     }
+   #far-mountains {
+      background-color: green;
+    }
+    #near-mountains {
+      background-color: orange;
+    } 
     header {
       position: absolute;
       bottom: 13em;
@@ -629,7 +636,7 @@ footer {
       font-size: 2em;
     }
     #moon {
-      font-size: 2em;
+      font-size: 1.7em;
       top: 25%;
     }
     #projects {
@@ -660,12 +667,12 @@ footer {
       bottom: 25em;
       min-width: 107vw;
       overflow: hidden;
-    }
+    }  */
 }
 
 /*Extra large devices (desktops)*/
 @media only screen and (min-width: 1201px) {
-  #nav-bar {
+  /* #nav-bar {
     font-size: 1.3em;
   }
   #moon {
@@ -673,5 +680,5 @@ footer {
   }
   .project-title {
       font-size: 2em;
-  }
+  } */
 }
