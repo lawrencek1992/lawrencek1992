@@ -10,10 +10,6 @@
   <title>Kelly Lawrence</title>
 </head>
 <body id="start">
-  <header>
-    <title>Kelly Lawrence Personal Portfolio</title>
-  </header>
-  <body>
 <!-- MODALS -->
 <!-- blogModal -->
     <div class="modal fade modal-centered-transparent" id="blogModal" tabindex="-1" aria-labelledby="blogModalLabel" aria-hidden="true" role="dialog">
@@ -24,7 +20,17 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">X</button>
           </div>
           <div class="modal-body">
-            <p id="blog-description">A blog to document my coding progress. Built with create-react-app. Google Firebase provides user authentication and database storage.</p>
+            <article id="blog-description">
+              A blog to document my coding progress. Built with create-react-app. Google Firebase provides user authentication and database storage.
+              <p class="demo-account-info"><em>
+                If you check out my blog, try logging in to the demo account to see the full functionality.
+                <br>
+                <b>Email: </b><span>lawrencek1992.demo@gmail.com</span>
+                <br>
+                <b>Password: </b><span>demoAccount</span>
+                </em>
+              </p>
+            </article>
             <ul class="technologies row">
               <label>Built With:</label>
               <li class="col-sm-3">React (with hooks)</li>
@@ -65,7 +71,7 @@
   </div>
 </div>
 <!-- productModal -->
-<div class="modal fade " id="productModal" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+<div class="modal fade " id="product-modal" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header">
@@ -136,9 +142,21 @@
   </div>
 </div>
 
+
+  <!--   Nav Bar -->
+  <nav role="navigation" class="navbar fixed-top navbar-expand navbar-dark"
+  style="background-color: #110624;">
+    <div class="container-fluid">
+      <div class="navbar-nav ms-auto" id="navbar-container">
+        <a class="nav-link h4" aria-current="page" href="#">Home</a>
+        <a class="nav-link h4" href="#projects">Work</a>
+        <a class="nav-link h4" href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
 <!-- Mountain Landscape -->
 <div id="main">
-    <div id="night">
+    <div id="night" class="container-fluid">
       <section id="far-mountains">
         <div id="far-mountain-1"></div>
         <div id="far-mountain-2"></div>
@@ -153,7 +171,7 @@
       <div id="moon"></div>
       <header>
       <h1>Kelly Lawrence</h1>
-        <h2 id="title">web developer</h2>
+        <h2>web developer</h2>
       </header>
       <section id="stars">
         <div class="star-1"></div>
@@ -162,45 +180,41 @@
         <div class="star-4"></div>
       </section>
     </div>
-  <!--   Nav Bar -->
-    <nav id="nav-bar">
-      <ul>
-        <li> <a id="nav-link" href="#start">Home</a></li>
-        <li> <a id="nav-link" href="#projects" class="projects-link" onclick="topOfProjects()">Recent Work</a></li>
-        <li> <a id="nav-link" href="#contact">Contact</a></li>
-      </ul>
-    </nav>
     
 <!--PROJECTS-->
-    <section id="projects">
-      <h2 id="projects-header">Here is some of my work</h2>
-      <div class="projects-grid">
-        <button class="project-tile" data-bs-toggle="modal" data-bs-target="#blogModal">
-          <img src="https://i.ibb.co/DDK5gkp/Screen-Shot-2021-04-20-at-6-24-35-PM.png" alt="Screen shot of coding blog page" border="0" class="product-img">
-          <br>
-          <p class="project-title">Coding Blog</p>
-        </button>
-        <button class="project-tile" data-bs-toggle="modal" data-bs-target="#productModal">
-          <img src="https://i.ibb.co/vQg2wdH/Screen-Shot-2021-01-02-at-7-48-44-PM.png" alt="Screen shot of product landing page" border="0" class="product-img">
-          <br>
-          <p class="project-title">Product Landing Page</p>
-        </button>
-        <button class="project-tile" data-bs-toggle="modal" data-bs-target="#palindromeModal">
-          <img src="https://i.ibb.co/1sb3y1W/Screen-Shot-2021-02-25-at-7-01-43-PM.png" alt="Screen shot of palindrome checker page" border="0" class="product-img">
-          <br>
-          <p class="project-title">Palindrome Checker</p>
-        </button>
-        <button class="project-tile" data-bs-toggle="modal" data-bs-target="#surveyModal">
-          <img src="https://i.ibb.co/txHCLV7/Screen-Shot-2021-01-02-at-7-52-51-PM.png" alt="Screen shot of a survey form" border="0" class="product-img">
-          <br>
-          <p class="project-title">Survey Form</p>
-        </button>
-        <button class="project-tile" data-bs-toggle="modal" data-bs-target="#documentationModal">
-          <img src="https://i.ibb.co/Q96kKKn/Screen-Shot-2021-01-02-at-7-50-05-PM.png" alt="Screen shot of technical documentation page" border="0" class="product-img">
-          <br>
-          <p class="project-title">Technical Documentation Page</p>
-        </button>
+    <section class="container-fluid" id="projects">
+      <h2 id="projects-header">Here are some of my projects...</h2>
+      <div class="container-fluid">
+        <div class="row justify-content-around" id="projects-grid">
+          <button class="project-tile col-md-5 top-buffer" data-bs-toggle="modal" data-bs-target="#blogModal">
+            <img src="https://i.ibb.co/DDK5gkp/Screen-Shot-2021-04-20-at-6-24-35-PM.png" alt="Screen shot of coding blog page" border="0" class="product-img">
+            <br>
+            <p class="project-title">Coding Blog</p>
+          </button>
+          <button class="project-tile col-md-5 top-buffer" data-bs-toggle="modal" data-bs-target="#productModal">
+            <img src="https://i.ibb.co/vQg2wdH/Screen-Shot-2021-01-02-at-7-48-44-PM.png" alt="Screen shot of product landing page" border="0" class="product-img">
+            <br>
+            <p class="project-title">Product Landing Page</p>
+          </button>
+          <button class="project-tile col-md-5 top-buffer" data-bs-toggle="modal" data-bs-target="#palindromeModal">
+            <img src="https://i.ibb.co/1sb3y1W/Screen-Shot-2021-02-25-at-7-01-43-PM.png" alt="Screen shot of palindrome checker page" border="0" class="product-img">
+            <br>
+            <p class="project-title">Palindrome Checker</p>
+          </button>
+          <button class="project-tile col-md-5 top-buffer" data-bs-toggle="modal" data-bs-target="#surveyModal">
+            <img src="https://i.ibb.co/txHCLV7/Screen-Shot-2021-01-02-at-7-52-51-PM.png" alt="Screen shot of a survey form" border="0" class="product-img">
+            <br>
+            <p class="project-title">Survey Form</p>
+          </button>
+          <button class="project-tile col-md-5 top-buffer" data-bs-toggle="modal" data-bs-target="#documentationModal">
+            <img src="https://i.ibb.co/Q96kKKn/Screen-Shot-2021-01-02-at-7-50-05-PM.png" alt="Screen shot of technical documentation page" border="0" class="product-img">
+            <br>
+            <p class="project-title">Technical Documentation Page</p>
+          </button>
+          <button class="col-md-5 top-buffer" style="opacity: 0;"></button>
+        </div>
       </div>
+
     </section>
       <section id="contact">
     <div class="main">
@@ -208,7 +222,7 @@
         <h2 id="contact-header">Please reach out if you'd like to work together!</h2>
         <div id="contact-details">
         <p class="contact-item">Email: lawrencek1992@gmail.com</p>
-        <p class="contact-item">Phone: (512) 365-4109</p>
+        <p class="contact-item">Phone: (512) 365-4209</p>
         <a href="https://drive.google.com/file/d/1ZaxIawTktA-ybY45vMMBo-GyU-4sqIs7/view?usp=sharing" class="contact-item" id="profile-link" target="_blank">Resume</a>
         <a href="https://www.freecodecamp.org/lawrencek1992" class="contact-item" id="profile-link" target="_blank">freeCodeCamp</a>
         <a href="https://github.com/lawrencek1992" class="contact-item" id="profile-link" target="_blank">Github</a>
