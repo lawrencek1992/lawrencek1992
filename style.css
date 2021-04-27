@@ -30,10 +30,6 @@ html {
 }
 
 /* MODAL STYLING */
-.modal-lg {
-  max-width: 700px; 
-  margin: 2em;
-}
 body.modal-open #main{
   -webkit-filter: blur(7px);
   -moz-filter: blur(7px);
