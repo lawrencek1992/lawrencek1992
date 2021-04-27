@@ -406,10 +406,14 @@ footer {
       top: 18em;
     }
     header {
+      font-size: 1.75em;
       position: absolute;
       left: 4em;
       right: 0;
-      bottom: 14em;
+      bottom: 9em;
+    }
+    #header-h2 {
+      font-size: 2em;
     }
   }
 
