@@ -390,9 +390,8 @@ footer {
     #product-modal{
       margin-top: 2em !important;
     }
-    #projects-header {
-      color: red;
-      background-color: yellow; 
+    .technologies {
+      padding-right: 2em;
     }
     #night {
       font-size: 0.65em;
@@ -417,6 +416,9 @@ footer {
 @media only screen 
   and (min-device-width: 414px) 
   and (max-device-width: 767px) {
+    .technologies {
+      padding-right: 2em;
+    }
     #night {
       width: 100%;
     }
