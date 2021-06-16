@@ -32,6 +32,36 @@ export const ShoplistModal = ({ shoplistModal, setShoplistModal}) => {
     );
 }
 
+export const BeyondNatureModal = ({ beyondNatureModal, setBeyondNatureModal}) => {
+    const hideModal = () => {
+        setBeyondNatureModal(false);
+    }
+    return (
+        <Modal show={beyondNatureModal} onHide={hideModal} size="lg" centered>
+            <Modal.Header closeButton>
+                <Modal.Title>Beyond Nature CO</Modal.Title>
+            </Modal.Header>
+            <Modal.Body>
+                <article>
+                    A website for a small business in Erie, Colorado. 
+                </article>
+                <label className="pl-3 pt-2 technologies-label">Built With:</label>
+                <Row className="text-center pl-3">
+                    <Col className="col-sm-3">React</Col>
+                    <Col className="col-sm-3">Bootstrap</Col>
+                    <Col className="col-sm-3">Sass</Col>
+                    <Col className="col-sm-3">Google Firebase</Col>
+                    <Col className="col-sm-3">Filepond Image Uploader</Col>
+                </Row>
+            </Modal.Body>
+            <Modal.Footer>
+                <a href="https://beyond-nature-co.netlify.app/" class="btn btn-outline-info" target="_blank" rel="noreferrer noopener">View</a>
+                <a href="https://github.com/lawrencek1992/Beyond-Nature-CO.git" class="btn btn-outline-light" target="_blank" rel="noreferrer noopener">Code</a>
+            </Modal.Footer>
+        </Modal>
+    );
+}
+
 export const BlogModal = ({ blogModal, setBlogModal}) => {
     const hideModal = () => {
         setBlogModal(false);
