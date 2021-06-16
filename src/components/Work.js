@@ -8,7 +8,8 @@ import blogPhoto from '../media/blog-photo.png';
 import productPhoto from '../media/product-photo.png';
 import palindromePhoto from '../media/palindrome-photo.png';
 import surveyPhoto from '../media/survey-photo.png';
-import { ShoplistModal, BlogModal, ProductModal, PalindromeModal, SurveyModal } from './Modals';
+import beyondNaturePhoto from '../media/beyond-nature-photo.png';
+import { ShoplistModal, BlogModal, ProductModal, PalindromeModal, SurveyModal, BeyondNatureModal } from './Modals';
 
 const Work = () => {
     const [shoplistModal, setShoplistModal] = useState(false);
@@ -16,6 +17,7 @@ const Work = () => {
     const [productModal, setProductModal] = useState(false);
     const [palindromeModal, setPalindromeModal] = useState(false);
     const [surveyModal, setSurveyModal] = useState(false);
+    const [beyondNatureModal, setBeyondNatureModal] = useState(false);
 
     return (
         <Container className="Work" fluid>
@@ -37,6 +39,21 @@ const Work = () => {
                             rounded/>
                         <br />
                         <p class="project-title text-center">Shoplist</p>
+                </Col>
+                <Col 
+                    xs={10}
+                    sm={5}
+                    className="project-tile rounded mt-3"
+                    onClick={() => setBeyondNatureModal(true)}
+                >
+                        <Image 
+                            src={beyondNaturePhoto} 
+                            alt="Screen shot of Beyond Nature CO website"
+                            className="mt-3 mb-2 project-image"
+                            fluid
+                            rounded/>
+                        <br />
+                        <p class="project-title text-center">Beyond Nature CO</p>
                 </Col>
                 <Col 
                     xs={10}
@@ -100,6 +117,7 @@ const Work = () => {
                 </Col>
             </Row>
             <ShoplistModal shoplistModal={shoplistModal} setShoplistModal={setShoplistModal} />
+            <BeyondNatureModal beyondNatureModal={beyondNatureModal} setBeyondNatureModal={setBeyondNatureModal} />
             <BlogModal blogModal={blogModal} setBlogModal={setBlogModal} />
             <ProductModal productModal={productModal} setProductModal={setProductModal} />
             <PalindromeModal palindromeModal={palindromeModal} setPalindromeModal={setPalindromeModal} />
