@@ -20,17 +20,23 @@ const  App = () => {
           <Route
             exact
             path="/"
-            component={About}
+            render={() => (
+              <About />
+            )}
           />
           <Route
             exact
             path="/work"
-            component={Work}
+            render={() => (
+              <Work />
+            )}
           />
           <Route
             exact
             path="/contact"
-            component={Contact}
+            render={() => (
+              <Contact />
+            )}
           />
         </Switch>
       </div>
