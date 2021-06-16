@@ -24,13 +24,11 @@ const  App = () => {
             <About />
           </Route>
           <Route
-            exact
             path="/work"
           >
             <Work />
           </Route>
           <Route
-            exact
             path="/contact"
           >
             <Contact />
