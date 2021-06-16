@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a5faf444.chunk.css",
+    "main.js": "/static/js/main.15eba2e0.chunk.js",
+    "main.js.map": "/static/js/main.15eba2e0.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.3e08a283.js",
+    "runtime-main.js.map": "/static/js/runtime-main.3e08a283.js.map",
+    "static/js/2.00d83af0.chunk.js": "/static/js/2.00d83af0.chunk.js",
+    "static/js/2.00d83af0.chunk.js.map": "/static/js/2.00d83af0.chunk.js.map",
+    "static/js/3.1bb06d72.chunk.js": "/static/js/3.1bb06d72.chunk.js",
+    "static/js/3.1bb06d72.chunk.js.map": "/static/js/3.1bb06d72.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.a5faf444.chunk.css.map": "/static/css/main.a5faf444.chunk.css.map",
+    "static/js/2.00d83af0.chunk.js.LICENSE.txt": "/static/js/2.00d83af0.chunk.js.LICENSE.txt",
+    "static/media/blog-photo.83b90372.png": "/static/media/blog-photo.83b90372.png",
+    "static/media/palindrome-photo.c2539a90.png": "/static/media/palindrome-photo.c2539a90.png",
+    "static/media/product-photo.88f3340d.png": "/static/media/product-photo.88f3340d.png",
+    "static/media/shoplist-photo.13845c7b.png": "/static/media/shoplist-photo.13845c7b.png",
+    "static/media/survey-photo.f627517d.png": "/static/media/survey-photo.f627517d.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3e08a283.js",
+    "static/js/2.00d83af0.chunk.js",
+    "static/css/main.a5faf444.chunk.css",
+    "static/js/main.15eba2e0.chunk.js"
+  ]
+}
