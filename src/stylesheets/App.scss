@@ -255,7 +255,7 @@ header {
 }
 
 .project-tile:hover, .project-tile:focus {
-    color: $blue;
+    border: solid 1px $white;
 }
 
 button.close {
