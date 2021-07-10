@@ -3,10 +3,38 @@ import Modal from 'react-bootstrap/Modal';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
+export const LightBrightModal = ({ lightBrightModal, setLightBrightModal }) => {
+    const hideModal = () => {
+        setLightBrightModal(false)
+    };
+
+    return (
+        <Modal show={lightBrightModal} onHide={hideModal} size="lg" centered>
+            <Modal.Header closeButton>
+                <Modal.Title>Light Bright</Modal.Title>
+            </Modal.Header>
+            <Modal.Body>
+                <article>A Light Bright web app</article>
+                <label className="pl-3 pt-2 technologies-label">Built With:</label>
+                <Row className=" text-center pl-3">
+                    <Col className="col-sm-3">React</Col>
+                    <Col clasName="col-sm-3">Reactstrap</Col>
+                    <Col className="col-sm-3">Redux</Col>
+                </Row>
+            </Modal.Body>
+            <Modal.Footer>
+                <a href="https://light-bright.netlify.app/" class="btn btn-outline-info" target="_blank" rel="noreferrer noopener">View</a>
+                <a href="https://github.com/lawrencek1992/light-bright.git" class="btn btn-outline-light" target="_blank" rel="noreferrer noopener">Code</a>
+            </Modal.Footer>
+        </Modal>
+    );
+};
+
 export const ShoplistModal = ({ shoplistModal, setShoplistModal}) => {
     const hideModal = () => {
-        setShoplistModal(false);
-    }
+        setShoplistModal(false)
+    };
+
     return (
         <Modal show={shoplistModal} onHide={hideModal} size="lg" centered>
             <Modal.Header closeButton>
@@ -19,7 +47,7 @@ export const ShoplistModal = ({ shoplistModal, setShoplistModal}) => {
                 <label className="pl-3 pt-2 technologies-label">Built With:</label>
                 <Row className="text-center pl-3">
                     <Col className="col-sm-3">React</Col>
-                    <Col className="col-sm-3">Bootstrap</Col>
+                    <Col className="col-sm-3">React-Bootstrap</Col>
                     <Col className="col-sm-3">Sass</Col>
                     <Col className="col-sm-3">Google Firebase</Col>
                 </Row>
@@ -48,7 +76,7 @@ export const BeyondNatureModal = ({ beyondNatureModal, setBeyondNatureModal}) =>
                 <label className="pl-3 pt-2 technologies-label">Built With:</label>
                 <Row className="text-center pl-3">
                     <Col className="col-sm-3">React</Col>
-                    <Col className="col-sm-3">Bootstrap</Col>
+                    <Col className="col-sm-3">React-Bootstrap</Col>
                     <Col className="col-sm-3">Sass</Col>
                     <Col className="col-sm-3">Google Firebase</Col>
                     <Col className="col-sm-3">Filepond Image Uploader</Col>
