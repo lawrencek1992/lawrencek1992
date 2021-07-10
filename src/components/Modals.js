@@ -18,7 +18,7 @@ export const LightBrightModal = ({ lightBrightModal, setLightBrightModal }) => {
                 <label className="pl-3 pt-2 technologies-label">Built With:</label>
                 <Row className=" text-center pl-3">
                     <Col className="col-sm-3">React</Col>
-                    <Col clasName="col-sm-3">Reactstrap</Col>
+                    <Col className="col-sm-3">Reactstrap</Col>
                     <Col className="col-sm-3">Redux</Col>
                 </Row>
             </Modal.Body>
