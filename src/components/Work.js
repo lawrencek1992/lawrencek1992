@@ -10,7 +10,7 @@ import palindromePhoto from '../media/palindrome-photo.png';
 import surveyPhoto from '../media/survey-photo.png';
 import beyondNaturePhoto from '../media/beyond-nature-photo.png';
 import lightBrightPhoto from '../media/light-bright-photo.png';
-import { ShoplistModal, BlogModal, ProductModal, PalindromeModal, SurveyModal, BeyondNatureModal } from './Modals';
+import { ShoplistModal, BlogModal, ProductModal, PalindromeModal, SurveyModal, BeyondNatureModal, LightBrightModal } from './Modals';
 
 const Work = () => {
     const [shoplistModal, setShoplistModal] = useState(false);
@@ -133,6 +133,7 @@ const Work = () => {
                         <p class="project-title text-center">Climber Survey Form</p>
                 </Col>
             </Row>
+            <LightBrightModal lightBrightModal={lightBrightModal} setLightBrightModal={setLightBrightModal} />
             <ShoplistModal shoplistModal={shoplistModal} setShoplistModal={setShoplistModal} />
             <BeyondNatureModal beyondNatureModal={beyondNatureModal} setBeyondNatureModal={setBeyondNatureModal} />
             <BlogModal blogModal={blogModal} setBlogModal={setBlogModal} />
